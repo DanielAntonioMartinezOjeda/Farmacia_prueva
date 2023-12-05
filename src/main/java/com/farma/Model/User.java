@@ -26,10 +26,13 @@ public class User {
     /** ------------------------------------------------ **/
     private Long id;
 
+    @Column(name = "username")
     private String username;
 
+    @Column(name = "password")
     private String password;
 
+    @Column(name = "enabled")
     private boolean enabled; /** es para verificar si la cuenta de usuario esta activa o inactica, si existe o no  **/
     /** --------------------------------------------------------------- **/
     /** --------------------------------------------------------------- **/

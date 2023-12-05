@@ -12,7 +12,11 @@ public class Role
     @Column(name = "role_id") /** en esta parte estamos colocando la sintaxis para colocar la llave primaria  **/
 
     /** ------------------------------------------  **/
-    @GeneratedValue(strategy = GenerationType.IDENTITY) /** Con esta linea de condigo, estamos especificando que la primary key se colocara en automatico de manera desendiente es decir 1 , 2 , 3 , ..... **/
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    /** Con esta linea de condigo, estamos especificando que la primary key se colocara en automatico de manera desendiente es decir 1 , 2 , 3 , ..... **/
     private Integer id; /** aqui se estan declarando el tipo de variable para cada dato, en este caso es un dato de tipo entero. **/
-    private String name; /** de igual manera en este punto se esta declarando la otra variable de tipo cadena **/
+
+    @Column(name = "name")
+    private String name;
+    /** de igual manera en este punto se esta declarando la otra variable de tipo cadena **/
 }
