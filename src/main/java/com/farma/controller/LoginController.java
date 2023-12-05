@@ -1,24 +1,13 @@
 package com.farma.controller;
 
-
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
-
-/**
- * Controlador que maneja las operaciones relacionadas con el inicio de sesión y login
- * el @Controller indica que es una clase  Controller relacionada con el login aquel que gestiona operaciones  del login .
- */
 @Controller
 public class LoginController {
 
-    /**
-     * Método que maneja las solicitudes GET para la página de inicio de sesión.
-     *
-     * @return La cadena que representa la vista o el html "login".
-     */
-    @RequestMapping("/login")
-    public String login() {
-        return "login";
+    @GetMapping("/login")
+    public String showLoginForm() {
+        return "login"; // Esto se mapea a una vista llamada "login.html" en el directorio "templates".
     }
 }

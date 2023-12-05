@@ -7,6 +7,11 @@ INSERT INTO users (password, enabled,email,APELLIDOS,NOMBRE,TELEFONO, ROLES_ID )
 INSERT INTO users (password, enabled,email,APELLIDOS,NOMBRE,TELEFONO, ROLES_ID ) VALUES
 ( '$2a$10$bN7OWEvi6rTqJEYbZfDOg.FHmG.xPTDxJR1k9LzsR4O6Nt8zuIKwq', '1', 'admin@gmail.com','admin','admin','5465',4);
 
+
+select * from roles;
+select * from users;
+
+
 ///////////////////Comprobar que los usuarios y los roles estan dentro de la base ////////////////////////////
 
 

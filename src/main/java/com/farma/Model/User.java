@@ -1,11 +1,15 @@
 package com.farma.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 //@Valid
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Entity
 @Table(name = "users")
