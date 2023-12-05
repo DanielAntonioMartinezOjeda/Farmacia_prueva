@@ -1,21 +1,50 @@
-<html>
-    <head></head>
-    <body>
-        <h1>Login</h1>
-        <form name='f' action="login" method='POST'>
-            <table>
-                <tr>
-                    <td>Usuario:</td>
-                    <td><input type='text' name='username' value=''></td>
-                </tr>
-                <tr>
-                    <td>Clave:</td>
-                    <td><input type='password' name='password' /></td>
-                </tr>
-                <tr>
-                    <td><input name="submit" type="submit" value="submit" /></td>
-                </tr>
-            </table>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/static/css/mainlogin.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Farmacias manito</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="nav-item">
+    </div>
+    <div class="login-content">
+
+        <form  action="login" method='POST'>
+            <h1 class="display-6">BIENVENIDO</h1>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <input type="email" name="email" placeholder="Correo electronico" required autofocus>
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <input type='password' name='password' placeholder="Contraseña" required>
+                </div>
+            </div>
+            <div  class="alert  alert-dismissable" th:if="${error != null}">
+                <label class="text-danger" th:text="${error}"></label>
+            </div>
+
+            <a href="#">Olvido contraseña?</a>
+            <td><input class="btn btn-primary btn-sm " name="submit" type="submit" value="Iniciar sesión" /></td>
+            <div>
+                <p class="mb-0">¿No tienes una cuenta?<a th:href="@{/register}" class="text-black-50-50 fw-bold"><strong>Registrate</strong></a>
+                </p>
+            </div>
         </form>
-    </body>
+    </div>
+</div>
+</body>
 </html>

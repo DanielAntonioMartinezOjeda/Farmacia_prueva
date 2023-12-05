@@ -1,0 +1,56 @@
+/*Estilo global*/
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#main-footer{
+    margin-top: 200px !important;
+}
+ .dashboard{
+	height:445px;
+	overflow: auto;
+	
+}
+
+ .dashboard1{
+	height:445px;
+	
+}
+.grafica {
+	width: 100%;
+}
+
+.alinear-vertical{
+	position: absolute;
+	 top: 38%;
+}
+.rectangulo-verde{
+color: rgb(73, 255, 51);	
+}
+.rectangulo-azul{
+color: rgb(51, 119, 255);	
+}
+.letra-grafica{
+	font-size:14px;
+	margin-bottom: 0px;
+}
+.card-titulo{
+	background: #198754;
+	
+}
+
+.pie {  
+  
+  position: sticky;
+  top: 90%;  
+
+}
+ .tex{  
+ 
+  font-size: 15px;  
+  color: white;
+   
+}
+
+
+

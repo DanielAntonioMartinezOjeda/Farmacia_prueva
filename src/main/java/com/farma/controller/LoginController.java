@@ -17,7 +17,7 @@ public class LoginController {
      *
      * @return La cadena que representa la vista o el html "login".
      */
-    @RequestMapping("/")
+    @RequestMapping("/login")
     public String login() {
         return "login";
     }
