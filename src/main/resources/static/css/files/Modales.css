@@ -1,0 +1,19 @@
+.hasNegative{
+    --bs-table-striped-color: #f00;
+    color: #f00;
+}
+#premium{
+    background-color: #1AA501;
+    color: white;
+}
+#magna{
+    background-color: #AA0214;
+    color: white;
+}
+#diesel{
+    background-color: #000000;
+    color: white;
+}
+tr.hasNegative td {
+    color: #f00;
+}

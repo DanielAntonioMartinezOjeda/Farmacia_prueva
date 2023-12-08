@@ -1,0 +1,20 @@
+
+//////////////////////////////////////////////////////////////////////
+
+INSERT INTO users (password, enabled,email,APELLIDOS,NOMBRE,TELEFONO, ROLES_ID ) VALUES
+('$2a$10$OlpVGGz1EXm.LQ/OcvmBQOFdAe3FQNYhOOXrKD6y9fhxOr2aBKwHu', '1', 'nilesh@gmail.com','kasmir','nil','5465',1);
+
+INSERT INTO users (password, enabled,email,APELLIDOS,NOMBRE,TELEFONO, ROLES_ID ) VALUES
+( '$2a$10$bN7OWEvi6rTqJEYbZfDOg.FHmG.xPTDxJR1k9LzsR4O6Nt8zuIKwq', '1', 'admin@gmail.com','admin','admin','5465',4);
+
+
+select * from roles;
+select * from users;
+
+
+///////////////////Comprobar que los usuarios y los roles estan dentro de la base ////////////////////////////
+
+
+select * from roles;
+select * from users;
+
