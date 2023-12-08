@@ -1,52 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      layout:decorate="fragments/general"
+
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="es">
 <head>
+    <!--librerias para grafica pastel  chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"
+            integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+            integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- cdn iconos bootstrap -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 
 <body>
 
 <div layout:fragment="content">
- <div class="row" >
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-         <div class="container-fluid">
-             <a class="navbar-brand" href="#">Navbar</a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                     <li class="nav-item">
-                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="#">Link</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Dropdown
-                         </a>
-                         <ul class="dropdown-menu">
-                             <li><a class="dropdown-item" href="#">Action</a></li>
-                             <li><a class="dropdown-item" href="#">Another action</a></li>
-                             <li><hr class="dropdown-divider"></li>
-                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                         </ul>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                     </li>
-                 </ul>
-                 <form class="d-flex" role="search">
-                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-success" type="submit">Search</button>
-                 </form>
-             </div>
-         </div>
-     </nav>
-</div>
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-6 mt-3">
+            <div class="card dashboard">
+                <div class="card-header card-titulo text-white ">
+                    <h4 class="text-center">ESTAS DENTRO DEdsfddffdL SISTEMS<i class="fas fa-shopping-card"></i></h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

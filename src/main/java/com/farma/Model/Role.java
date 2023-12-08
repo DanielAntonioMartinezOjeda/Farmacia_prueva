@@ -1,27 +1,22 @@
 package com.farma.Model;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "roles")
 public class Role {
 
+    // <editor-fold defaultstate="collapsed" desc="Variables">
 
     @Id
     @Column(name = "role_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name", nullable = false, unique = true)
     private String name;
 
+    // </editor-fold>
+
+    // <editor-fold defaultstate="collapsed" desc="Propiedades">
     public Long getId() {
         return id;
     }
@@ -36,6 +31,7 @@ public class Role {
 
     public void setName(String name) {
         this.name = name;
-
     }
+
+    // </editor-fold>
 }

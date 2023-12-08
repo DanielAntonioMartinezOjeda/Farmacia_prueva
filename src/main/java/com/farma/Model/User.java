@@ -1,15 +1,16 @@
 package com.farma.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 
-//@Valid
-@AllArgsConstructor
-@NoArgsConstructor
+
+@Valid
 @Data
 @Entity
 @Table(name = "users")
@@ -24,7 +25,7 @@ public class User {
     @Transient
     private String _id;
 
-    //@NotEmpty(message = "El campo es requerido")
+    @NotEmpty(message = "El campo es requerido")
     @Column(name = "password" )
     private String password;
 
@@ -32,19 +33,19 @@ public class User {
     @Transient
     private String confirmpassword;
 
-    //@NotBlank(message = "El campo es requerido")
+    @NotBlank(message = "El campo es requerido")
     @Column(name = "nombre", nullable = false)
     private String nombre;
 
-    //@NotEmpty(message = "El campo es requerido")
+    @NotEmpty(message = "El campo es requerido")
     @Column(name = "apellidos", nullable = false)
     private String apellidos;
 
     @Column(name = "telefono" ,nullable = false)
     private String telefono;
 
-    //@NotEmpty(message = "El campo es requerido")
-    //@Email
+    @NotEmpty(message = "El campo es requerido")
+    @Email
     @Column(name = "email",  nullable = false)
     private String email;
 
@@ -54,5 +55,6 @@ public class User {
     @ManyToOne
     @JoinColumn(name = "roles_id")
     private Role role;
+
 
 }
